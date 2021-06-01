@@ -1,0 +1,47 @@
+app:
+  env: dev
+  version: 1.0
+  readTimeout: 5
+  writeTimeout: 10
+  appName: cron
+  maxPageSize: 100
+  defaultPageSize: 10
+  logDir: storage/logs
+database:
+  driver: mysql
+  protocol: tcp
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: 123456
+  name: laravel
+  prefix:
+  runMode: debug
+  maxOpens: 50
+  maxIdles: 10
+  maxLifetime: 60
+redis:
+  driver: redis
+  protocol: tcp
+  host: 127.0.0.1
+  port: 6379
+  password:
+  maxIdle: 10
+  maxActive: 100
+  idleTimeout: 60
+sentry:
+  dsn:
+email:
+  host: smtp.126.com
+  port: 465
+  userName: xxx@126.com
+  password:
+  isSSL: true
+  from:
+es:
+  link: http://127.0.0.1:9200/
+  maxIdleConnsPerHost: 10
+mongo:
+  host: 127.0.0.1:27017
+  maxPoolSize: 100
+  timeout: 100
